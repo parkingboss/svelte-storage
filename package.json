@@ -2,7 +2,7 @@
   "name": "@parkingboss/svelte-storage",
   "version": "1.0.0",
   "description": "Cross Platform Permanent Storage stores (using store.js)",
-  "main": "dist/index.cjs.js",
+  "main": "lib/index.cjs.js",
   "module": "lib/index.esm.js",
   "browser": "lib/index.js",
   "scripts": {
