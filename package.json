@@ -1,0 +1,38 @@
+{
+  "name": "@parkingboss/svelte-storage",
+  "version": "1.0.0",
+  "description": "Cross Platform Permanent Storage stores (using store.js)",
+  "main": "dist/index.cjs.js",
+  "module": "lib/index.esm.js",
+  "browser": "lib/index.js",
+  "scripts": {
+    "build": "rollup -c",
+    "prepublishOnly": "npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/parkingboss/svelte-storage.git"
+  },
+  "keywords": [
+    "svelte",
+    "storage",
+    "store"
+  ],
+  "author": "Parking Boss",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/parkingboss/svelte-storage/issues"
+  },
+  "homepage": "https://github.com/parkingboss/svelte-storage#readme",
+  "peerDependencies": {
+    "svelte": "^3.0.0"
+  },
+  "dependencies": {
+    "store": "^2.0.12"
+  },
+  "devDependencies": {
+    "@rollup/plugin-commonjs": "^11.0.2",
+    "@rollup/plugin-node-resolve": "^7.1.1",
+    "rollup": "^1.31.0"
+  }
+}
