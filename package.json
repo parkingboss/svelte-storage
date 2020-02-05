@@ -3,14 +3,16 @@
   "version": "1.0.2",
   "description": "Cross Platform Permanent Storage stores (using store.js)",
   "main": "index.cjs.js",
+  "module": "index.js",
+  "browser": "index.browser.js",
   "legacyMain": "index.legacy.cjs.js",
-  "module": "index.esm.js",
-  "legacyModule": "index.legacy.esm.js",
-  "browser": "index.js",
-  "legacyBrowser": "index.legacy.js",
+  "legacyModule": "index.legacy.js",
+  "legacyBrowser": "index.legacy.browser.js",
   "scripts": {
     "build": "rollup -c",
-    "prepublishOnly": "npm run build"
+    "prebuild": "npm run clean",
+    "prepublishOnly": "npm run build",
+    "clean": "rm -f index*"
   },
   "repository": {
     "type": "git",
