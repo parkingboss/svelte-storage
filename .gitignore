@@ -2,5 +2,5 @@
 node_modules
 public
 .vscode/*
-/index.js
-/index.*.js
+dist/
+lib/

@@ -1,18 +1,13 @@
 {
   "name": "@parkingboss/svelte-storage",
-  "version": "1.0.3",
+  "version": "1.0.1",
   "description": "Cross Platform Permanent Storage stores (using store.js)",
-  "main": "index.cjs.js",
-  "module": "index.js",
-  "browser": "index.browser.js",
-  "legacyMain": "index.legacy.cjs.js",
-  "legacyModule": "index.legacy.js",
-  "legacyBrowser": "index.legacy.browser.js",
+  "main": "lib/index.cjs.js",
+  "module": "lib/index.esm.js",
+  "browser": "lib/index.js",
   "scripts": {
     "build": "rollup -c",
-    "prebuild": "npm run clean",
-    "prepublishOnly": "npm run build",
-    "clean": "rm -f index*"
+    "prepublishOnly": "npm run build"
   },
   "repository": {
     "type": "git",
